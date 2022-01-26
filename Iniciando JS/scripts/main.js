@@ -1,6 +1,7 @@
 // JS del título
 const miTitulo = document.querySelector('h1');
 miTitulo.textContent = 'Kikiki';
+
 // JS del botón
 
 document.getElementById("boton").onclick = function() {boton()};
@@ -16,10 +17,11 @@ function colorfondo() {
 }
 
 // El botón despliega una serie de opciones
-// Get the button, and when the user clicks on it, execute myFunction
+// Línea en la que al hacer click, se muestra la función que se escribe abajo.
 document.getElementById("myBtn").onclick = function() {myFunction()};
 
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+// Con ".show {display:block;}" el id myDropdown es lo que se quiere mostrar al dar click al botón y con .show haces mostrar myDropdown
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }

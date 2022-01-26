@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript Arrays</h1>
+    <h2>The filter() Method</h2>
+
+    <p>Get every element in the array that has a value of 18 or more:</p>
+    <p id="demo"></p>
+
+    <p>Get every element in the array that has a value of 18 or less:</p>
+    <p id="demo1"></p>
+
+    <script>
+        // Con const doy nombre al elemento que quiero cambiar
+        var ages = [32, 33, 17, 40];
+        var ages1 = [32, 33, 17, 40];
+        // Con document get element by id innerHTML hago que ese elemento se muestre en el html y 
+        // despues pongo la etiqueta que quiero aplicar a los const
+        document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+        document.getElementById("demo1").innerHTML = ages1.filter(checkAdult1);
+        // Aqui indico que si el resultado es menor o mayor de lo que indico se borre
+        function checkAdult(age) {
+            return age >= 18;
+        }
+        function checkAdult1(age) {
+            return age <= 18;
+        }
+    </script>
+
+</body>
+
+</html>
