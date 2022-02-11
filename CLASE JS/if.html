@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Javiempanada y musta</h1>
+    <img src="./javipollo.png" id="myImage" width="400" height="350">
+    <input type="button" onclick="changeImage()" value="Alterna entre Musta y Javi" />
+    <p>¡Ejemplo de JavaScript w/ Javiempanada y Musta!</p>
+    <script>
+        function changeImage() {
+    let image = document.getElementById('myImage');
+    if (image.src.match("musta.jpg")) {
+        image.src = "./javipollo.png";
+    }
+    else {
+        image.src = "./musta.jpg";
+    }
+}
+    </script>
+</body>
+</html>
