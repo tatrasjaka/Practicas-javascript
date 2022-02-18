@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Determinar si un numero es pos o neg</title>
+    </head>
+    <body>
+        <script>
+            let numero = parseInt(prompt("Ingresar numero"));
+            if(numero % 2 == 0){
+                document.write("El numero" + numero + "es par")
+            }
+            else{
+                document.write("El numero" + numero + "es impar")
+            }
+            if(numero == 0){
+                document.write(numero + "es un numero neutro");
+            }
+            else if(numero > 0){
+                document.write(numero + "es un numero posi")
+            }
+            else{
+                document.write(numero + "es un numero negativo")
+            }
+        </script>
+    </body>
+</html>
