@@ -1,34 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h2>JavaScript Validation</h2>
-
-<p>Please input a number between 1 and 10:</p>
-
-<form>
-  <p>Nombre: <input type="text" name="nombre" size="40"></p>
-  <p>Sueldo: <input type="text" name="nombre" size="40"></p>
-  <input id="numb">
-  <button type="button" onclick="myFunction()">Submit</button>
-</form>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  // Get the value of the input field with id="numb"
-  let x = document.getElementById("numb").value;
-  // If x is Not a Number or less than one or greater than 10
-  let text;
-  if (isNaN(x) || x < 1 || x > 10) {
-    text = "Input not valid";
-  } else {
-    text = "Input OK";
-  }
-  document.getElementById("demo").innerHTML = text;
-}
-</script>
+  <script>
+    let nombre = prompt("¿Cuál es nombre?");
+    let sueldo = prompt("¿Cuál es tu sueldo?");
+    let antiguedad = prompt("¿Cuál es tu antiguedad?");
+    if (antiguedad > 10) {
+      sueldo = parseInt(sueldo) + parseInt(sueldo * 0.05);
+    }
+    else if (antiguedad >= 5 && antiguedad <= 10) {
+      sueldo = parseInt(sueldo) + parseInt(sueldo * 0.02)
+    }
+    console.log(" Eres " + nombre + " con un sueldo de " + sueldo + " con una antiguedad de " + antiguedad + " anos ")
+    document.write(" Eres " + nombre + " con un sueldo de " + sueldo + " con una antiguedad de " + antiguedad + " anos ")
+  </script>
 
 </body>
+
 </html>
