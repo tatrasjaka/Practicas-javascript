@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        let nombre = prompt("¿Cuál es nombre?");
+        let nota = parseInt(prompt("¿Cuál es tu nota de ?"));
+        let nota0 = parseInt(prompt("¿Cuál es tu nota de ?"));
+        let nota1 = parseInt(prompt("¿Cuál es tu nota de ?"));
+        let notamedia = (nota + nota0 + nota1) / 3;
+        switch (true) {
+            case (notamedia < 5):
+                evaluacion = 'Suspenso'
+                break;
+            case ((notamedia >= 5) && (notamedia < 7)):
+                evaluacion = 'Aprobado'
+                break;
+            case ((notamedia >= 7) && (notamedia < 9)):
+                evaluacion = 'Notable'
+                break;
+            case (notamedia >= 9):
+                evaluacion = 'Sobresaliente'
+                break;
+        }
+        document.write(nombre + ': Has sacado un ' + evaluacion + ': Nota media: ' + notamedia);
+    </script>
+
+</body>
+
+</html>
