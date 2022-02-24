@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <script>
+        let x = 8;
+        let y = 5;
+        let suma = parseInt(x) + parseInt(y);
+        document.write(suma)
+        // El código de arriba es otra historia
+        let a = parseInt(prompt('Introduce un numero a sumar'));
+        let b = parseInt(prompt('Introduce otro numero a sumar'));
+        let c = parseInt(prompt('Introduce un numero a restar'));
+        let d = parseInt(prompt('Introduce otro numero a restar'));
+        let e = parseInt(prompt('Introduce un numero a dividir'));
+        let f = parseInt(prompt('Introduce otro numero a dividir'));
+        let g = parseInt(prompt('Introduce un numero a multiplicar'));
+        let h = parseInt(prompt('Introduce otro numero a multiplicar'));
+
+        function sumarNumeros(a, b) {
+            let suma0 = parseInt(a) + parseInt(b);
+            document.write('<br>')
+            document.write(suma0)
+        }
+        sumarNumeros(a, b)
+
+        function restarNumeros(c, d) {
+            let resta0 = parseInt(c) - parseInt(d);
+            document.write('<br>')
+            document.write(resta0)
+        }
+        restarNumeros(c, d)
+
+        function dividirNumeros(e, f) {
+            let division0 = parseInt(e) / parseInt(f);
+            document.write('<br>')
+            document.write(division0)
+        }
+        dividirNumeros(e, f)
+
+        function multiplicarNumeros(g, h) {
+            let multiplicacion0 = parseInt(g) * parseInt(h);
+            document.write('<br>')
+            document.write(multiplicacion0)
+        }
+        multiplicarNumeros(g, h)
+    </script>
+
+</body>

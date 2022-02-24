@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+	<script src="calculadora.js"></script>
+	<script>
+		let operacion = prompt("Que quieres hacer? sumar, restar, multiplicacion, division");
+		let x = parseInt(prompt("Dame un valor"));
+		let y = parseInt(prompt("Dame otro valor"));
+		switch (operacion) {
+			case "sumar":
+				sumarNumeros(x, y);
+				break;
+			case "restar":
+				restarNumeros(x, y);
+				break;
+			case "multiplicacion":
+				multiNumeros(x, y);
+				break;
+			case "division":
+				diviNumeros(x, y);
+				break;
+		}
+	</script>
+
+</body>

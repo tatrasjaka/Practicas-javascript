@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    
+</head>
+<body>
+<script>
+let a = parseInt(prompt(`dime un numero`))
+let b = parseInt(prompt(`dime otro numero`))
+let elegir = parseInt(prompt(`elige: 1.sumar 2.restar 3.multiplicar 4.dividir`))
+
+
+
+function sumar(a,b){
+    let suma=parseInt(a)+parseInt(b);
+    document.write(`<br>Suma de ${a} y ${b}: `,suma);
+}
+function restar(a,b){
+    let resta=parseInt(a)-parseInt(b);
+    document.write(`<br>Resta de ${a} y ${b}: `,resta);
+
+}
+
+function mult(a,b){
+    let mult=parseInt(a)*parseInt(b);
+    document.write(`<br>Multiplicacion de ${a} y ${b}: `,mult);
+}
+
+function divi(a,b){
+    let divi=parseInt(a)/parseInt(b);
+    document.write(`<br>Division de ${a} y ${b}: `,divi);
+
+}
+
+switch (true){
+    case (elegir == 1):
+        sumar(a,b);
+        break;
+    case (elegir == 2):
+        restar(a,b);
+        break;
+    case (elegir == 3):
+        mult(a,b);
+        break;
+    case (elegir == 4):
+        divi(a,b)
+        break;
+
+}
+</script>
+</body>
